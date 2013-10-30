@@ -1,0 +1,19 @@
+extends layout
+
+block content
+  h1= title
+  div.userLogin
+     form( method="post")
+       div
+         div
+           span.label   UserName   : 
+           input(type="text", name="UserName", id="userName")
+           p
+         div
+           span.label PassWord    : 
+           input(type="password", name="Password", id="pwd")
+           p
+         div#editEmployeeSubmit
+           input(type="submit", value="Save")
+        
+    

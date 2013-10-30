@@ -1,0 +1,13 @@
+
+/*
+ * GET users listing.
+ */
+
+exports.list = function(req, res){
+  res.send("respond with a resource");
+};
+exports.page = function(req, res){
+   UserName=req.param('UserName');
+   Password=req.param('Password');
+   res.send(UserName+"respond with a resource"+Password);
+};

@@ -1,0 +1,83 @@
+!SESSION 2013-10-29 15:34:41.932 -----------------------------------------------
+eclipse.buildId=4.3.0.I20130605-2000
+java.version=1.7.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.standard.product
+Command-line arguments:  -data C:\Data\GITProjects\PreferenceServiceWorkSpace -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.standard.product
+
+!ENTRY org.nodeclipse.ui 1 0 2013-10-29 15:38:34.494
+!MESSAGE RelativityFileSystemStructureProvider.cllectFiles() called. file count=7
+
+!ENTRY org.nodeclipse.ui 1 0 2013-10-29 15:38:34.538
+!MESSAGE RelativityFileSystemStructureProvider.getContents() called. elemnt=C:\Users\VHAISL~1\AppData\Local\Temp\1\express-work\1383075514154\AddPreferenceValue\app.js
+
+!ENTRY org.nodeclipse.ui 1 0 2013-10-29 15:38:34.547
+!MESSAGE RelativityFileSystemStructureProvider.getContents() called. elemnt=C:\Users\VHAISL~1\AppData\Local\Temp\1\express-work\1383075514154\AddPreferenceValue\package.json
+
+!ENTRY org.nodeclipse.ui 1 0 2013-10-29 15:38:34.555
+!MESSAGE RelativityFileSystemStructureProvider.getContents() called. elemnt=C:\Users\VHAISL~1\AppData\Local\Temp\1\express-work\1383075514154\AddPreferenceValue\public\stylesheets\style.css
+
+!ENTRY org.nodeclipse.ui 1 0 2013-10-29 15:38:34.562
+!MESSAGE RelativityFileSystemStructureProvider.getContents() called. elemnt=C:\Users\VHAISL~1\AppData\Local\Temp\1\express-work\1383075514154\AddPreferenceValue\routes\index.js
+
+!ENTRY org.nodeclipse.ui 1 0 2013-10-29 15:38:34.566
+!MESSAGE RelativityFileSystemStructureProvider.getContents() called. elemnt=C:\Users\VHAISL~1\AppData\Local\Temp\1\express-work\1383075514154\AddPreferenceValue\routes\user.js
+
+!ENTRY org.nodeclipse.ui 1 0 2013-10-29 15:38:34.573
+!MESSAGE RelativityFileSystemStructureProvider.getContents() called. elemnt=C:\Users\VHAISL~1\AppData\Local\Temp\1\express-work\1383075514154\AddPreferenceValue\views\index.jade
+
+!ENTRY org.nodeclipse.ui 1 0 2013-10-29 15:38:34.577
+!MESSAGE RelativityFileSystemStructureProvider.getContents() called. elemnt=C:\Users\VHAISL~1\AppData\Local\Temp\1\express-work\1383075514154\AddPreferenceValue\views\layout.jade
+
+!ENTRY org.nodeclipse.ui 1 0 2013-10-29 15:38:34.668
+!MESSAGE templateRoot: C:\Data\Eclipse\eclipse\configuration\org.eclipse.osgi\bundles\261\1\.cp\common-templates
+
+!ENTRY org.nodeclipse.ui 1 0 2013-10-29 15:38:34.673
+!MESSAGE RelativityFileSystemStructureProvider.getContents() called. elemnt=C:\Data\Eclipse\eclipse\configuration\org.eclipse.osgi\bundles\261\1\.cp\common-templates\.settings\com.eclipsesource.jshint.ui.prefs
+
+!ENTRY org.eclipse.egit.ui 2 0 2013-10-29 15:38:34.811
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\vhaislnachin'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.nodeclipse.ui 1 0 2013-10-29 15:38:35.979
+!MESSAGE RelativityFileSystemStructureProvider.getContents() called. elemnt=C:\Data\Eclipse\eclipse\configuration\org.eclipse.osgi\bundles\261\1\.cp\common-templates\README.md
+
+!ENTRY org.eclipse.debug.ui 4 120 2013-10-29 15:38:38.176
+!MESSAGE org.eclipse.debug.ui.toggleBreakpointsTargetFactory extension failed to load breakpoint toggle target because the specified id is already registered.  Specified ID is: org.chromium.debug.ui.ChromiumToggleBreakpointTargetFactory
+
+!ENTRY org.nodeclipse.ui 1 0 2013-10-29 21:18:06.027
+!MESSAGE RelativityFileSystemStructureProvider.cllectFiles() called. file count=7
+
+!ENTRY org.nodeclipse.ui 1 0 2013-10-29 21:18:06.029
+!MESSAGE RelativityFileSystemStructureProvider.getContents() called. elemnt=C:\Users\VHAISL~1\AppData\Local\Temp\1\express-work\1383095885759\ManagePreferenceValue\app.js
+
+!ENTRY org.nodeclipse.ui 1 0 2013-10-29 21:18:06.038
+!MESSAGE RelativityFileSystemStructureProvider.getContents() called. elemnt=C:\Users\VHAISL~1\AppData\Local\Temp\1\express-work\1383095885759\ManagePreferenceValue\package.json
+
+!ENTRY org.nodeclipse.ui 1 0 2013-10-29 21:18:06.049
+!MESSAGE RelativityFileSystemStructureProvider.getContents() called. elemnt=C:\Users\VHAISL~1\AppData\Local\Temp\1\express-work\1383095885759\ManagePreferenceValue\public\stylesheets\style.css
+
+!ENTRY org.nodeclipse.ui 1 0 2013-10-29 21:18:06.059
+!MESSAGE RelativityFileSystemStructureProvider.getContents() called. elemnt=C:\Users\VHAISL~1\AppData\Local\Temp\1\express-work\1383095885759\ManagePreferenceValue\routes\index.js
+
+!ENTRY org.nodeclipse.ui 1 0 2013-10-29 21:18:06.066
+!MESSAGE RelativityFileSystemStructureProvider.getContents() called. elemnt=C:\Users\VHAISL~1\AppData\Local\Temp\1\express-work\1383095885759\ManagePreferenceValue\routes\user.js
+
+!ENTRY org.nodeclipse.ui 1 0 2013-10-29 21:18:06.074
+!MESSAGE RelativityFileSystemStructureProvider.getContents() called. elemnt=C:\Users\VHAISL~1\AppData\Local\Temp\1\express-work\1383095885759\ManagePreferenceValue\views\index.jade
+
+!ENTRY org.nodeclipse.ui 1 0 2013-10-29 21:18:06.081
+!MESSAGE RelativityFileSystemStructureProvider.getContents() called. elemnt=C:\Users\VHAISL~1\AppData\Local\Temp\1\express-work\1383095885759\ManagePreferenceValue\views\layout.jade
+
+!ENTRY org.nodeclipse.ui 1 0 2013-10-29 21:18:06.163
+!MESSAGE templateRoot: C:\Data\Eclipse\eclipse\configuration\org.eclipse.osgi\bundles\261\1\.cp\common-templates
+
+!ENTRY org.nodeclipse.ui 1 0 2013-10-29 21:18:06.166
+!MESSAGE RelativityFileSystemStructureProvider.getContents() called. elemnt=C:\Data\Eclipse\eclipse\configuration\org.eclipse.osgi\bundles\261\1\.cp\common-templates\.settings\com.eclipsesource.jshint.ui.prefs
+
+!ENTRY org.nodeclipse.ui 1 0 2013-10-29 21:18:06.174
+!MESSAGE RelativityFileSystemStructureProvider.getContents() called. elemnt=C:\Data\Eclipse\eclipse\configuration\org.eclipse.osgi\bundles\261\1\.cp\common-templates\README.md

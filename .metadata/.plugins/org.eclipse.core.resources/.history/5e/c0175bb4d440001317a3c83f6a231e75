@@ -1,0 +1,7 @@
+extends layout
+
+block content
+  h1= title
+  link(rel='stylesheet', href='/stylesheets/style2.css')
+  p Welcome to #{name}
+  
