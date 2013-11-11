@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  h1= title
+  p
+  p
+  p
+  div.userLogin
+     form( method="post")
+       div
+         div
+           span.label   Nothin   : 
+           p
+    

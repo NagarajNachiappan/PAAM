@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  h1= title
+  p
+  p
+  p
+  h3= mongoResponse
+  div.userLogin
+     form( method="get")
+       div
+         div
+           span.label   Nothin : 
+           p
+    

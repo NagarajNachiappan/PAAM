@@ -1,0 +1,80 @@
+/**
+ * New node file
+ */
+
+//var config = module.parent.exports.config;
+
+
+var config = require('./config');
+
+
+//Retrieve
+var MongoClient = require('mongodb').MongoClient;
+var Db = require('mongodb').Db,
+MongoClient = require('mongodb').MongoClient;
+
+exports.printer = function(UserName, Password) {
+	
+	return "respond with a "+config.param.db.url+"resource from MongoDB" ;	
+	
+};
+
+//exports.checkLogin = function(UserName, Password) {
+
+ // Connect to the db
+ //MongoClient.connect("mongodb://localhost:27017/test", function(err, db) {
+ // if(!err) {
+ //   console.log("We are connected");
+ // }
+  
+//});
+ 
+//};
+
+//Connect using the connection string
+/*exports.checkLogin = function(UserName, Password) {
+
+
+	MongoClient.connect("mongodb://localhost:27017/integration_test", function(err, db) {
+
+	    db.collection("replicaset_mongo_client_collection").insert({a:1}, {b:1}, {upsert:true}, function(err, result) {
+
+	    db.close();
+	  });
+	});
+};
+
+*/
+var mongo = require('mongodb');
+
+var Server = mongo.Server,
+    Db = mongo.Db,
+    BSON = mongo.BSONPure;
+
+var server = new Server('localhost', 27017, {auto_reconnect: true});
+db = new Db('nodejsintro', server);
+
+db.open(function(err, db) {
+    if (!err) {
+        console.log("Connected to 'nodejsintro' database");
+        db.collection('user', {strict: true}, function(err, collection) {
+            if (err) {
+                console.log("The 'user' collection doesn't exist. Creating it with sample data...");
+                //at this point you should call your method for inserting documents.
+            }
+            db.collection("user").insert({ str: "maria" }, function (err, inserted) {
+                // check err...
+            });
+            db.collection("user").ensureIndex( { "str": 1 }, { unique: true } );
+            
+            //db.collection("user").insert({ str: "foobar" }, { w: 0 });
+            
+            
+            
+        });
+        
+        
+        
+    }
+});
+

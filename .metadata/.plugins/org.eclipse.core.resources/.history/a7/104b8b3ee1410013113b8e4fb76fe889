@@ -1,0 +1,16 @@
+/**
+ * New node file
+ */
+var config = require('config');
+
+var mongo = require('mongodb');
+var MongoClient = mongo.MongoClient;
+
+// var getTimestamp = require('../lib/util.js').getTimestamp;
+// var getDate = require('../lib/util.js').getDate;
+
+exports.checkCreds = function(req, res) {
+	UserName=req.param('UserName');
+	Password=req.param('Password');
+	res.send(UserName+"respond with a resource from MongoDB"+Password);	
+}

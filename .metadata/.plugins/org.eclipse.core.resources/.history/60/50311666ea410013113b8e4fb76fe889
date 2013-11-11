@@ -1,0 +1,16 @@
+/**
+ * New node file
+ */
+
+var config = require('../config');
+var mongo = require('mongodb');
+var MongoClient = mongo.MongoClient;
+
+// var getTimestamp = require('../lib/util.js').getTimestamp;
+// var getDate = require('../lib/util.js').getDate;
+
+exports.printer = function(UserName, Password) {
+	
+	return "respond with a resource from MongoDB";	
+};
+

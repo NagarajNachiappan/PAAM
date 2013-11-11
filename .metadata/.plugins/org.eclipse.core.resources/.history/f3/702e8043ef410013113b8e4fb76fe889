@@ -1,0 +1,16 @@
+{
+        "db": {
+                "url":"mongodb://localhost:27017/local?connectTimeoutMS=300000",
+                "collection":"UserCreds"
+        },
+        "ignore":["core.log", "core.fs", "core.audit"],
+        "include":[],
+        "operation":["i", "u", "d"],
+        "debug":true,
+        "redis": {
+                "port":"6379",
+                "host":"127.0.0.1"
+        },
+        "listener":"../lib/queueHandler.js",
+        "sessionFile":"../config/session.json"
+}

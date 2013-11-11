@@ -1,0 +1,32 @@
+/**
+ * New node file
+ */
+
+//var config = module.parent.exports.config;
+
+
+var config = require('./config');
+
+
+//Retrieve
+var MongoClient = require('mongodb').MongoClient;
+
+
+exports.printer = function(UserName, Password) {
+	
+	return "respond with a "+config.param.db.url+"resource from MongoDB" ;	
+	
+};
+
+exports.checkLogin = function(UserName, Password) {
+
+ // Connect to the db
+ MongoClient.connect("mongodb://localhost:27017/test", function(err, db) {
+  if(!err) {
+    console.log("We are connected");
+  }
+  MongoClient.close();
+});
+};
+
+

@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  h1= title
+  p
+  p
+  p
+  h3 =AfterResponse
+  div.userLogin
+     form( method="get")
+       div
+         div
+           span.label   =AfterResponse 
+           p
+           input(type='span.label', value=AfterResponse)
+    

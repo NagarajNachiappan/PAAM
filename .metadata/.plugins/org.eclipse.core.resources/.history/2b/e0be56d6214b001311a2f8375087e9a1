@@ -1,0 +1,16 @@
+extends layout
+var data = !{JSON.stringify(data)};
+block content
+  h1= title
+  p
+  p
+  p
+  h3 !{pageData}
+  div.userLogin
+     form( method="get")
+       div
+         div
+           span.label   Mongo Response :  !{pageData} 
+           p
+           
+    

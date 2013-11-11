@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  h1= title
+  p
+  p
+  p
+  h3 #{pageData.name[0]}
+  div.userLogin
+     form( method="get")
+       div
+         div
+           span.label   Mongo Response :  #{pageData[1]} 
+           p
+           
+    

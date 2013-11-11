@@ -1,0 +1,40 @@
+/**
+ * New node file
+ */
+
+//var config = module.parent.exports.config;
+var mongo = require('mongodb');
+var MongoClient = mongo.MongoClient;
+
+var config = require('./config');
+var Db = require('mongodb').Db;
+
+exports.printer = function(UserName, Password) {
+	
+
+	var db = new DB('test', new Server('locahost', 27017));
+	// Establish connection to db
+	db.open(function(err, db) {
+
+	  // Fetch a collection
+	  var collection = db.collection('shouldCorrectlyFailOnRetryDueToAppCloseOfDb');
+
+	  // Insert a document
+	  collection.insert({a:1}, {w:1}, function(err, result) {
+	    assert.equal(null, err);
+
+	    // Force close the connection
+	    db.close(true, function(err, result) {
+
+	      // Attemp to insert should fail now with correct message 'db closed by application'
+	      collection.insert({a:2}, {w:1}, function(err, result) {
+	        assert.equal('db closed by application', err.message);
+	      });
+	    });
+	  });
+	});
+	
+	return "respond with a "+config.param.db.url+"resource from MongoDB" ;	
+	
+};
+

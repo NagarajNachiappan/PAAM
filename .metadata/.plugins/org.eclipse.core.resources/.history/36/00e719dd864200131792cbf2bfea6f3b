@@ -1,0 +1,15 @@
+/**
+ * New node file
+ */
+
+//var config = module.parent.exports.config;
+var mongo = require('mongodb');
+var MongoClient = mongo.MongoClient;
+
+var config = require('./config');
+
+exports.printer = function(UserName, Password) {
+	
+	return "respond with a "+config.param.db.url+"resource from MongoDB" ;	
+};
+

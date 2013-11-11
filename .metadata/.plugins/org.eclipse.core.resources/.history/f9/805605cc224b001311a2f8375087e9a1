@@ -1,0 +1,16 @@
+extends layout
+block content
+  
+  h1= title
+  p
+  p
+  p
+  h3= !{pageResponse}
+  div.userLogin
+     form( method="get")
+       div
+         div
+           span.label   Mongo Response :  !{pageData} 
+           p
+           
+    

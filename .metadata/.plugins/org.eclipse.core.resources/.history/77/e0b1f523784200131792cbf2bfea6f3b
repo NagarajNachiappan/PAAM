@@ -1,0 +1,27 @@
+
+/*
+ * GET users listing.
+ */
+
+var mongoModule = require('./mongoModule');
+
+var app = require('../app')
+var config = app.config;
+
+console.log(module.parent);
+
+exports.list = function(req, res){
+  res.send("respond with a resource");
+};
+
+exports.login = function(req, res){
+	res.render('index', { title: 'Preference Services',name: 'nagaraj'  });  
+	};
+
+exports.loginpost = function(req, res){
+   UserName=req.param('UserName');
+   Password=req.param('Password');
+   mongoResponse = mongoModule.printer(UserName,Password);
+   res.send(UserName+mongoResponse+Password+module.parent);
+   
+};
