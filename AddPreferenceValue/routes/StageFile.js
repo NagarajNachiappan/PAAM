@@ -9,7 +9,7 @@
                 
               });
             
-
+ 
 /* All Query */
             var stream = collection.find().stream();
             stream.on('error', function (err) {
