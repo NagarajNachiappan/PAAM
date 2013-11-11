@@ -3,6 +3,11 @@
  * GET users listing.
  */
 
+var mongoModule = require('./mongoModule');
+
+var config = require('./config');
+
+
 exports.list = function(req, res){
   res.send("respond with a resource");
 };
@@ -14,5 +19,16 @@ exports.login = function(req, res){
 exports.loginpost = function(req, res){
    UserName=req.param('UserName');
    Password=req.param('Password');
-   res.send(UserName+"respond with a resource"+Password);
+   mongoModule.opensesame(UserName,Password,function(mongoResponse)
+		   {
+   
+//   res.send(mongoResponse+"   UserName : "+ UserName+"    Password  : " + Password+ " URL   : " +config.param.db.url);
+//   res.render('After.jade', {title: 'Login Response', pageData: JSON.stringify(mongoResponse) });
+   res.render('After',  { 
+                     title: 'Login Response', 
+                     pageResponse: JSON.stringify(mongoResponse) 
+                     }
+               );
+   console.log('mongoResponse' + mongoResponse);
+		   });
 };

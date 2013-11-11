@@ -8,9 +8,8 @@ var express = require('express')
   , user = require('./routes/user')
   , http = require('http')
   , path = require('path')
-  , config = require('./routes/config');
-
-module.exports.config = config;
+  , config = require('./configu')
+  , cf = require('./config/default');
 
 var app = express();
 
@@ -30,11 +29,6 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
-console.log(process.env.PATH);
-
-console.log(path.relative('C:\\Data\\GITProjects\\PreferenceServiceWorkSpace\\AddPreferenceValue\\app.js', 'C:\\Data\\GITProjects\\PreferenceServiceWorkSpace\\AddPreferenceValue\\config'));
-
-console.log(config.param.db.url);
 
 app.get('/', user.login);
 //app.get('/', function(req, res){
