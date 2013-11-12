@@ -1,0 +1,28 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  text-align: center	
+}
+
+a {
+  color: #00B7FF;
+}
+.userLogin 
+   {
+    border: 3px;
+    border-color: #000;
+    border-style: dotted;
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+  input[type =button], input[type =submit]
+    {
+    clear: both;
+    text-align: right;
+    margin-left: 165px;
+    display: block;
+    float: right;
+    }
+
+  }
