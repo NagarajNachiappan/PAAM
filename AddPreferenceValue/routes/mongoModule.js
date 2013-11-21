@@ -70,10 +70,15 @@ exports.opensesame = function(UserName, Password,callBack) {
 	                   console.log("The 'user' collection doesn't exist.");
 	                   callBack("Admin has to login and create users before you using it for the first time");
 	                        }
+<<<<<<< HEAD
 	               // Credit response Start
 	        	   var CredResponse = db.collection("Credentials").findOne({username:UserName}, function(error, item) {
 	            	if (item != null) { 
 	            	   if(item.password==Password)
+=======
+	               var coll = db.collection("Credentials").findOne({username:UserName}, function(err, item) {
+	            	  if(item.password==Password)
+>>>>>>> 49d6f971b182e24e633788339d77785fd6567d17
 	            		  {
 	            		  console.log("password Matched");
 	            		  
@@ -85,6 +90,7 @@ exports.opensesame = function(UserName, Password,callBack) {
 	            		  console.log("password not Matched");
 	            		  callBack( "log in Error . Check your credentials.." )  ;
 	            		  }
+<<<<<<< HEAD
 	            	  }
 	            	else
 	            	  {
@@ -94,6 +100,12 @@ exports.opensesame = function(UserName, Password,callBack) {
 	                 });
 	        	// Credit response End
 	        	   
+=======
+	               	  
+	                   
+	                 });
+	              
+>>>>>>> 49d6f971b182e24e633788339d77785fd6567d17
 	           });
 	       }
 	     }); //db.open ends here

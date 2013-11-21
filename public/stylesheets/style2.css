@@ -1,0 +1,33 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  text-align: center;
+  text-stroke: 1px rgba(255, 255, 255, 0.1);
+  color: #555
+}
+a {
+ text-align: center; 
+ color: #00B7FF;
+}
+h1, h2 {
+  margin: 0;
+  font-size: 22px;
+  color: #343434;
+}
+
+.userLogin {
+    border: 3px;
+    border-color: #000;
+    border-style: dotted;
+    width: 450px;
+    padding: 16px;
+    text-align: center;
+  input[type =button], input[type =submit]
+    clear: both;
+    text-align: center;
+    margin-left: 165px;
+    display: block;
+    float: center;
+ 	
+}

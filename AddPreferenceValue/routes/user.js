@@ -13,12 +13,17 @@ exports.list = function(req, res){
 };
 
 exports.login = function(req, res){
+<<<<<<< HEAD
 	res.render('index', { title: 'User Preference Services',name: 'nagaraj'  });  
+=======
+	res.render('index', { title: 'Preference Services',name: 'nagaraj'  });  
+>>>>>>> 49d6f971b182e24e633788339d77785fd6567d17
 	};
 
 exports.loginpost = function(req, res){
    UserName=req.param('UserName');
    Password=req.param('Password');
+<<<<<<< HEAD
    var pageData;
    mongoModule.opensesame(UserName,Password,function(mongoResponse)
 		   {
@@ -101,4 +106,18 @@ exports.loginpost = function(req, res){
    console.log('mongoResponse' + mongoResponse);
 		   });
    
+=======
+   mongoModule.opensesame(UserName,Password,function(mongoResponse)
+		   {
+   
+//   res.send(mongoResponse+"   UserName : "+ UserName+"    Password  : " + Password+ " URL   : " +config.param.db.url);
+//   res.render('After.jade', {title: 'Login Response', pageData: JSON.stringify(mongoResponse) });
+   res.render('After',  { 
+                     title: 'Login Response', 
+                     pageResponse: JSON.stringify(mongoResponse) 
+                     }
+               );
+   console.log('mongoResponse' + mongoResponse);
+		   });
+>>>>>>> 49d6f971b182e24e633788339d77785fd6567d17
 };
