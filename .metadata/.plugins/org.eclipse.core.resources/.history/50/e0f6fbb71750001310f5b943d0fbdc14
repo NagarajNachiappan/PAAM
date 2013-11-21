@@ -1,0 +1,39 @@
+/**
+ * New node file
+ */
+
+exports.After = function(req, res){
+		res.render('After', { title: 'After Preference Services',name: 'After nagaraj'  });  
+		};
+		
+exports = module.exports = function(req, res) {
+	
+	
+	console.log('In After');
+}
+
+
+exports = module.exports = function(req, res) {
+	
+	var view = new keystone.View(req, res),
+		locals = res.locals;
+	
+	// Init locals
+	locals.section = 'blog';
+	locals.filters = {
+		category: req.params.category
+	};
+	locals.data = {
+		posts: [],
+		categories: []
+	};
+	
+//var locals = res.locals;
+
+// Init locals
+//locals.filters = {
+//	After: req.params.After
+//};
+//locals.data = {
+//	After: []
+//};

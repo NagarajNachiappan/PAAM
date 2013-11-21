@@ -1,0 +1,17 @@
+/**
+ * New node file
+ */
+exports = module.exports = function(req, res) {
+	
+	var view = new keystone.View(req, res),
+		locals = res.locals;
+	
+	// Init locals
+	locals.filters = {
+		After: req.params.After
+	};
+	locals.data = {
+		After: []
+	};
+	
+}

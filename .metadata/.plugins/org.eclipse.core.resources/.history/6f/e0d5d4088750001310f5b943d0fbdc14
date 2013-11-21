@@ -1,0 +1,23 @@
+extends layout
+block content
+             
+  h1= title
+  p
+  p
+  p
+  h3= pageResponse
+  div.userLogin
+      div
+         div
+           span.label   Mongo Response :  !{pageResponse} 
+           
+           case loginStatus
+            when true: #true  
+                       In True Block
+                       Executing Second Line of Code
+            when false: #false
+                        In False Block
+                        Executing Second line in False Block           
+            default: #other other
+           iframe(width="100%", height=215, src="http://www.msn.com", frameborder="0", allowfullscreen)
+           iframe(width="100%", height=215, src="http://www.YAHOO.COM", frameborder="0", allowfullscreen)                       

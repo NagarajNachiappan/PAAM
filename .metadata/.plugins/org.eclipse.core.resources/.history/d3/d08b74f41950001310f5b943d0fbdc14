@@ -1,0 +1,8 @@
+/**
+ * New node file
+ */
+
+exports.after = function(req, res) {
+	
+	  res.render('After', { title: 'Express', flag: 0, items: ['a', 'b', 'c'] });
+};

@@ -1,0 +1,4 @@
+C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Attachmate\Reflection\;C:\Program Files\Tumbleweed\Desktop Validator\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files\ActivIdentity\ActivClient\;C:\Program Files (x86)\ActivIdentity\ActivClient\;C:\Program Files (x86)\ZANTAZ\EAS Outlook Addin\bin;C:\Program Files\Perforce;C:\Program Files\Java\jdk1.6.0_45\bin;C:\Data\Maven\apache-maven-3.1.0\bin;C:\data\nodejs\;c:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Users\vhaislnachin\AppData\Local\GitHub\PortableGit_015aa71ef18c047ce8509ffb2f9e4bb0e3e73f13\bin;C:\Windows\System32;C:\Users\vhaislnachin\AppData\Roaming\npm;C:\Python27_32;C:\Python27_32\Scripts
+..\config
+mongodb://localhost:27017/local?connectTimeoutMS=300000
+Express server listening on port 3000

@@ -1,0 +1,23 @@
+extends layout
+block content
+  
+  h1= title
+  p
+  p
+  p
+  h3= pageResponse
+  div.userLogin
+     form( method="get")
+       div
+         div
+           span.label   Mongo Response :  !{pageResponse} 
+           if(pageResponse.contains("logged in as User :"))
+            p.confirm
+            input(type="checkbox", name="agree")
+            I agree to the Terms & Conditions of this Company
+            br
+            input(type="checkbox", name="subscribe")
+            Tick to recieve future communication from Company
+
+
+    

@@ -1,0 +1,17 @@
+/**
+ * New node file
+ */
+exports = module.exports = function(req, res) {
+	
+	var locals = res.locals;
+	
+	// Init locals
+	locals.filters = {
+		After: req.params.After
+	};
+	locals.data = {
+		After: []
+	};
+	
+	console.log('In After');
+}

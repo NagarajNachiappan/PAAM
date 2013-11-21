@@ -1,0 +1,33 @@
+extends layout
+block content
+  
+  h1= title
+  p
+  p
+  p
+  h3= pageResponse
+  div.userLogin
+     form( method="get")
+       div
+         div
+           span.label   Mongo Response :  !{pageResponse}
+           - var status = !{loginStatus}
+           span.label status #{status}  
+           script
+            if status == "true"
+             p.confirm
+             input(type="checkbox", name="Yahoo")
+             Show Yahoo
+             br
+             input(type="checkbox", name="MSN")
+             Show MSN
+             br
+             input(type="checkbox", name="Bank of America")
+             Show Bank Of America
+             br
+             input(type="checkbox", name="Wells Fargo")
+             Show Wells Fargo
+            else
+              nothing
+
+    

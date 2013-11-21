@@ -1,0 +1,16 @@
+extends layout
+block content
+script.
+ var users = !{JSON.stringify(pageResponse)}
+             
+  h1= title
+  p
+  p
+  p
+  h3= pageResponse
+  div.userLogin
+     form( method="get")
+       div
+         div
+           span.label   Mongo Response :  !{pageResponse} 
+           span.label users 

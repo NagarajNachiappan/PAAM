@@ -1,0 +1,41 @@
+
+/*
+ * GET users listing.
+ */
+
+var mongoModule = require('./mongoModule');
+
+var config = require('./config');
+
+
+exports.list = function(req, res){
+  res.send("respond with a resource");
+};
+
+exports.login = function(req, res){
+	res.render('index', { title: 'User Preference Services',name: 'nagaraj'  });  
+	};
+
+exports.loginpost = function(req, res){
+   UserName=req.param('UserName');
+   Password=req.param('Password');
+   mongoModule.opensesame(UserName,Password,function(mongoResponse)
+		   {
+
+	   request('http://google.com', function (error, response, html) {
+		   if (!error && response.statusCode == 200) {
+		     console.log(html);
+		   }
+		 });
+//   res.send(mongoResponse+"   UserName : "+ UserName+"    Password  : " + Password+ " URL   : " +config.param.db.url);
+//   res.render('After.jade', {title: 'Login Response', pageData: JSON.stringify(mongoResponse) });
+
+//   res.render('After',  { 
+//                     title: 'Login Response', 
+//                     pageResponse: mongoResponse,
+//                     loginStatus: true
+//                    }
+//               );
+   console.log('mongoResponse' + mongoResponse);
+		   });
+};

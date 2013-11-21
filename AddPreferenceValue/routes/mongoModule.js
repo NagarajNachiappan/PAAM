@@ -70,8 +70,10 @@ exports.opensesame = function(UserName, Password,callBack) {
 	                   console.log("The 'user' collection doesn't exist.");
 	                   callBack("Admin has to login and create users before you using it for the first time");
 	                        }
-	               var coll = db.collection("Credentials").findOne({username:UserName}, function(err, item) {
-	            	  if(item.password==Password)
+	               // Credit response Start
+	        	   var CredResponse = db.collection("Credentials").findOne({username:UserName}, function(error, item) {
+	            	if (item != null) { 
+	            	   if(item.password==Password)
 	            		  {
 	            		  console.log("password Matched");
 	            		  
@@ -83,10 +85,15 @@ exports.opensesame = function(UserName, Password,callBack) {
 	            		  console.log("password not Matched");
 	            		  callBack( "log in Error . Check your credentials.." )  ;
 	            		  }
-	               	  
-	                   
+	            	  }
+	            	else
+	            	  {
+	            		  callBack( "User Doesnot Exist" )  ;	
+	            	  }	
+	            	    
 	                 });
-	              
+	        	// Credit response End
+	        	   
 	           });
 	       }
 	     }); //db.open ends here

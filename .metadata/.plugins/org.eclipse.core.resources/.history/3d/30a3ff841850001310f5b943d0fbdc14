@@ -1,0 +1,8 @@
+/**
+ * New node file
+ */
+
+exports.After = function(req, res){
+		res.render('After', { title: 'After Preference Services',name: 'After nagaraj'  });  
+		};
+		

@@ -1,16 +1,28 @@
 extends layout
 block content
-  
+             
   h1= title
   p
   p
   p
   h3= pageResponse
   div.userLogin
-     form( method="get")
-       div
+      div
          div
            span.label   Mongo Response :  !{pageResponse} 
-           p
            
-    
+           case loginStatus
+            when true: #true  
+                       In True Block
+                       Executing Second Line of Code
+            when false: #false
+                        In False Block
+                        Executing Second line in False Block           
+            default: #other other
+           iframe(width="100%", height=215, src="http://www.msn.COM", frameborder="1",sandbox="allow-same-origin allow-forms allow-scripts",allowfullscreen)  
+           script.
+            var socket = io.connect('http://www.google.com');
+            socket.on('connect', function () {
+             socket.send(window.location);
+            });
+                                

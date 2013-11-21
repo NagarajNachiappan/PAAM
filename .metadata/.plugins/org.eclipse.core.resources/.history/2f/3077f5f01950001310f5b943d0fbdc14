@@ -1,0 +1,19 @@
+/**
+ * New node file
+ */
+
+exports.after = function(req, res) {
+	
+	var view = new keystone.View(req, res),
+		locals = res.locals;
+	
+	// Init locals
+	locals.section = 'blog';
+	locals.filters = {
+		category: req.params.category
+	};
+	locals.data = {
+		posts: [],
+		categories: []
+	};
+}

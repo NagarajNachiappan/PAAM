@@ -1,0 +1,15 @@
+extends layout
+block content
+             
+  h1= title
+  p
+  p
+  p
+  h3= pageResponse
+  div.userLogin
+      div
+         div
+           span.label   Mongo Response :  !{pageResponse} 
+           
+           case loginStatus
+     
